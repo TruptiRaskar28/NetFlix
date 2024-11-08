@@ -1,0 +1,74 @@
+/* Set up a full-screen background image for the banner */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4); /* Optional dark overlay for better text visibility */
+}
+
+/* Banner content container */
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centering the content */
+  z-index: 2;
+  padding: 0 20px;
+  max-width: 700px;
+  width: 100%;
+}
+
+/* Main heading styles */
+.banner h1 {
+  font-size: 4rem; /* Large font size for the title */
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+/* Paragraph styling */
+.banner p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Button styling */
+.btn-primary {
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  background-color: #e50914; /* Netflix Red */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button */
+.btn-primary:hover {
+  background-color: #f40612;
+}
+
+/* Media query for mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .banner h1 {
+    font-size: 3rem; /* Adjust title size on smaller screens */
+  }
+
+  .banner p {
+    font-size: 1.2rem; /* Adjust paragraph size */
+  }
+
+  .btn-primary {
+    font-size: 1rem; /* Adjust button font size */
+    padding: 10px 20px;
+  }
+}

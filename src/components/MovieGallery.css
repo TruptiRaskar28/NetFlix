@@ -1,0 +1,135 @@
+/* Container for the search bar and button */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Search bar styling */
+.search-bar {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  width: 250px;
+}
+
+/* Search button styling */
+.search-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Search button hover effect */
+.search-button:hover {
+  background-color: #f40612;
+}
+
+/* Responsive grid for movie cards */
+.movie-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the grid */
+}
+
+/* Movie card styling */
+.movie-card {
+  background-color: #222;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+/* Movie card image styling */
+.movie-image {
+  width: 100%; /* Makes the image fill the card */
+  height: 300px; /* Set a fixed height for all images */
+  object-fit: cover; /* Ensures the image fills the space while keeping aspect ratio */
+  border-radius: 8px 8px 0 0; /* Adds rounded corners to the top */
+}
+
+/* Movie info styling */
+.movie-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.movie-title {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.movie-description {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+/* Gallery container styling */
+.gallery {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Movie row grid */
+.movie-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Movie card styling */
+.movie-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  text-align: center;
+  width: 200px;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Movie image styling */
+.movie-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Movie info styling */
+.movie-info {
+  padding: 10px;
+}
+
+.movie-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.movie-description {
+  font-size: 0.9rem;
+  color: #666;
+}
